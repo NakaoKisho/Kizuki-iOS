@@ -6,7 +6,7 @@ FigmaでUI・UXを検討し、架空データで操作できるUIモックから
 
 ## 現在の段階
 
-Android版と対応する開発方針、Issue・レビュー・Git運用の土台を整備しています。UIにはSwiftUIを採用します。Xcodeプロジェクトは未作成で、対象iOSバージョン、Bundle ID、データ保存方式、テスト構成の採用前の提案は[初期構成の判断Issue](https://github.com/NakaoKisho/Kizuki-iOS/issues/1)で確認できます。
+Android版と対応する開発方針、Issue・レビュー・Git運用の土台を整備しています。初期構成は[プロダクト方針](.codex/rules/product/AGENTS.md)で定め、採用理由は[判断Issue](https://github.com/NakaoKisho/Kizuki-iOS/issues/1)に記録しています。Xcodeプロジェクトは未作成で、アプリの実装・実行検証は次の段階です。
 
 ## 開発環境
 
