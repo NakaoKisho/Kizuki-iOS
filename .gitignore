@@ -1,0 +1,16 @@
+.agent-output/
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Xcode user and build output
+DerivedData/
+build/
+*.xcuserstate
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Swift Package Manager build output
+.build/
