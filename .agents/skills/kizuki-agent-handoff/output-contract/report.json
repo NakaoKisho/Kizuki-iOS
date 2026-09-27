@@ -1,0 +1,9 @@
+{
+  "run_id": "<prepareで発行されたUUID>",
+  "agent": "<指定された役割名>",
+  "fingerprint": "<fingerprintコマンドの出力>",
+  "status": "needs_changes",
+  "summary": "<結果の要約>",
+  "evidence": [],
+  "findings": []
+}

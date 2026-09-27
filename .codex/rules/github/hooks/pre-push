@@ -1,0 +1,16 @@
+#!/bin/sh
+# Check destination refs, including deletion and explicit refspecs.
+while read -r local_ref local_oid remote_ref remote_oid extra || [ -n "$local_ref$local_oid$remote_ref$remote_oid$extra" ]
+do
+    if [ -z "$local_ref" ] || [ -z "$local_oid" ] || [ -z "$remote_ref" ] || [ -z "$remote_oid" ] || [ -n "$extra" ]; then
+        echo 'Push blocked: invalid pre-push input.' >&2
+        exit 1
+    fi
+    case "$remote_ref" in
+        refs/heads/main|refs/heads/stg|refs/heads/develop|refs/heads/dev)
+            echo 'Push blocked: protected destination. Use a work branch and PR.' >&2
+            exit 1
+            ;;
+    esac
+done
+exit 0
